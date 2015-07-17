@@ -1,0 +1,17 @@
+.slide.shout h2 {
+  width: 80%;
+  left: 10%;
+  font-size: 70px;
+}
+.slide.cover h2 {
+  margin: 380px 0 0 -70px;
+  color: #fff;
+  font-size: 70px;
+}
+.slide.cover p {
+  margin-left: -70px;
+  color: #fff;
+  font-style: italic;
+  font-size: 20px;
+}
+
