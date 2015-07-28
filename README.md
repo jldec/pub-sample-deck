@@ -5,7 +5,7 @@ The repo provides a quick way to start writing your own presentations using the 
 ### installation
 
 ```sh
-git clone git@github.com:jldec/pub-sample-deck.git
+git clone https://github.com/jldec/pub-sample-deck.git
 cd pub-sample-deck
 npm install
 ```

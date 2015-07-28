@@ -1,3 +1,10 @@
+
+/* less space at the top */
+.slide>div {
+  padding-top: 60px;
+  height: 580px;
+}
+
 .slide.shout h2 {
   width: 80%;
   left: 10%;
@@ -15,3 +22,26 @@
   font-size: 20px;
 }
 
+.slide img[full] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width:1024px;
+}
+
+.slide img[align=right] {
+  margin-left:1em;
+}
+
+.slide img[align=left] {
+  margin-right:2em;
+}
+
+.slide  {
+  z-index: 2;
+}
+
+#fragment-4, #fragment-4 h2 {
+  color:#fff;
+}
