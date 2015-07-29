@@ -1,6 +1,6 @@
 var opts = module.exports = {
 
-  pkgs: ['pub-theme-shower-ribbon'],
+  pkgs: ['pub-theme-shower-ribbon', 'pub-pkg-highlight'],
 
   sources: [
     {

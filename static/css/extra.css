@@ -2,14 +2,21 @@
 /* for less space at the top - padding-top and height should add up to 640 */
 
 .slide>div {
-  padding-top: 60px;
-  height: 580px;
+  padding-top: 40px;
+  height: 600px;
 }
 
 /* slightly larger font size */
 
 .slide {
   font-size: 1.2em;
+}
+
+.slide pre code {
+  width: 120%;
+  font-size: 0.8em;
+  line-height: 1.8;
+  overflow: hidden;
 }
 
 
