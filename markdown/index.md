@@ -31,9 +31,11 @@ david deutsch
 
 ## Slide 3: Lists
 
+Text followed by a list.
+
 1. with with with with with with with
-  - words words
-  - words words
+  - **bold words words**
+  - _italic words words_
   - words words
   - words words
 - nice nice nice nice nice nice
@@ -49,6 +51,14 @@ david deutsch
 | abc    | def    |   right aligned |
 | abc    | def    |   right aligned |
 
+
+---- ----
+
+# Slide 5: Heading Levels
+## Level 2
+### Level 3
+#### Level 4
+##### Level 5
 
 ---- ----
 

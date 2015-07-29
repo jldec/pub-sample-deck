@@ -1,9 +1,6 @@
 ---- /sample2 ----
 name: Sample Deck #2
 
-# Sample Deck #2
-Byline
-
 
 ---- #cover ----
 
@@ -14,7 +11,7 @@ Use the nav menu to switch between presentations
 
 ---- #1 ----
 
-## This one is shorter
+## This presentation is shorter
 
 > stylish quote spanning multiple lines. stylish quote spanning multiple lines. stylish quote spanning multiple lines.
 
@@ -27,14 +24,16 @@ Use the nav menu to switch between presentations
 [Shower HTML presentation engine ](https://github.com/shower/shower)
 
 
-----  #boogers ----
+---- #boogers ----
 background-image: /images/water.jpg
 
 ## Yikes
+
+First some text
+
 - boogers boogers boogers boogers boogers boogers boogers boogers boogers boogers boogers boogers
 - are are are are are are are are are are are are
 - delicious delicious delicious
-
 
 
 ---- #test2 ----

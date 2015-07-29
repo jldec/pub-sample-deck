@@ -5,23 +5,22 @@ var opts = module.exports = {
   sources: [
     {
       path:'./markdown',
+
+      // descend directories looking for .md files
       glob:'**/*.md',
-      // fragmentDelim:'md-headings', // pub -m, required for this theme
+
+      // this is not required if fragments are separated with `---- #name ----`
+      // fragmentDelim:'md-headings',
+
+      // allow saving from the pub editor
       writable:true
     }
   ],
 
+  // images live in ./static/images
+  // extra.css lives in ./static/css
   staticPaths: [ './static' ],
 
   // path to extra stylesheet
   injectCss: '/css/extra.css',
-
-  // don't forget photo credit
-  photoCredit: 'Cover Photo by Jurgen Leschner, github.com/jldec',
-
-  // copyright comment
-  copyright: 'Copyright © 2015 Hard Working Person',
-
-  // ask search engines not to crawl this site
-  noRobots: true
 }
