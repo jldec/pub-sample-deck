@@ -1,11 +1,17 @@
-# Example Presentation
+---- ----
+name: Sample Deck #1
+
+# Sample Deck #1
 Byline
 
+---- ----
 
 ## Title
 ![](/images/ice.jpg)
 Use the nav menu to switch between presentations
 
+
+---- ----
 
 ## Slide 1: quote
 
@@ -16,8 +22,12 @@ fail experimental tests.
 david deutsch
 
 
+---- ----
+
 ## Slide 2: No text
 
+
+---- ----
 
 ## Slide 3: Lists
 
@@ -29,6 +39,8 @@ david deutsch
 - nice nice nice nice nice nice
 
 
+---- ----
+
 ## Slide 4: Table
 
 | col1   | col2   |     col3 header |
@@ -37,6 +49,8 @@ david deutsch
 | abc    | def    |   right aligned |
 | abc    | def    |   right aligned |
 
+
+---- ----
 
 ## credits
 [Vadim Makeev](https://github.com/pepelsbey):

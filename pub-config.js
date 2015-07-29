@@ -6,7 +6,7 @@ var opts = module.exports = {
     {
       path:'./markdown',
       glob:'**/*.md',
-      fragmentDelim:'md-headings', // pub -m, required for this theme
+      // fragmentDelim:'md-headings', // pub -m, required for this theme
       writable:true
     }
   ],
