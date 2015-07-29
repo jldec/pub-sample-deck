@@ -21,3 +21,8 @@
   font-style: italic;
   font-size: 20px;
 }
+
+@media print {
+  #nav { display:none; }
+  .pub-button { display:none; }
+}
