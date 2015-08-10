@@ -1,6 +1,6 @@
 var opts = module.exports = {
 
-  pkgs: ['pub-theme-shower-ribbon', 'pub-pkg-highlight'],
+  pkgs: ['pub-theme-shower-ribbon', 'pub-pkg-highlight', 'pub-pkg-seo'],
 
   sources: [
     {
@@ -19,8 +19,19 @@ var opts = module.exports = {
 
   // images live in ./static/images
   // extra.css lives in ./static/css
-  staticPaths: [ './static' ],
+  // bring in ../.gitignore for gh-pages branch
+  staticPaths: [ './static', '../.gitignore' ],
 
   // path to extra stylesheet
   injectCss: '/css/extra.css',
+
+  outputs: [
+    {
+      path:'./out',
+      relPaths:true
+    }
+  ],
+
+  // ask search engines not to crawl this site (depends on pub-pkg-seo)
+  noRobots: 1
 }

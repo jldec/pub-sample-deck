@@ -1,4 +1,4 @@
----- ----
+---- / ----
 name: Sample Deck #1
 
 # Sample Deck #1
@@ -12,24 +12,25 @@ Use the nav menu to switch between presentations
 
 
 ---- ----
+background-image: /images/water.jpg
 
-## Slide 1: quote
+## Quote with background image
 
 > The overwhelming majority of theories are rejected
 because they contain bad explanations, not because they
 fail experimental tests.
 
-david deutsch
+David Deutsch
 
 
 ---- ----
 
-## Slide 2: No text
+## Just a title - No text
 
 
 ---- ----
 
-## Slide 3: Lists
+## Lists
 
 Text followed by a list.
 
@@ -43,7 +44,7 @@ Text followed by a list.
 
 ---- ----
 
-## Slide 4: Table
+## Table
 
 | col1   | col2   |     col3 header |
 | ------ | ------ | --------------: |
@@ -54,7 +55,25 @@ Text followed by a list.
 
 ---- ----
 
-# Slide 5: Heading Levels
+## Code
+
+```js
+$.getJSON('/pub/_opts.json', function(opts) {
+  var generator = require('pub-generator')(opts)
+  generator.load(function(err) {
+    var $edit = $('textarea.editor')
+    $edit.on('keyup', function() {
+      generator.updateFragmentText(
+        editor.binding,
+        $edit.val())
+    })
+  })
+})
+```
+
+---- ----
+
+# Heading Level 1
 ## Level 2
 ### Level 3
 #### Level 4
@@ -62,6 +81,6 @@ Text followed by a list.
 
 ---- ----
 
-## credits
+## Credits
 [Vadim Makeev](https://github.com/pepelsbey):
 [Shower HTML presentation engine ](https://github.com/shower/shower)

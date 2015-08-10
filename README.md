@@ -2,10 +2,12 @@
 
 The repo provides a quick way to start writing your own presentations using the [pub-theme-shower-ribbon](https://github.com/jldec/pub-theme-shower-ribbon) presentation theme.
 
+See published samples at [http://jldec.github.io/pub-sample-deck](http://jldec.github.io/pub-sample-deck)
+
 ### installation
 
 ```sh
-git clone https://github.com/jldec/pub-sample-deck.git
+git clone https://github.com/jldec/pub-sample-deck
 cd pub-sample-deck
 npm install
 ```
