@@ -20,7 +20,7 @@ var opts = module.exports = {
   // images live in ./static/images
   // extra.css lives in ./static/css
   // bring in ../.gitignore for gh-pages branch
-  staticPaths: [ './static', '../.gitignore' ],
+  staticPaths: [ './static', '.gitignore', '.nojekyll' ],
 
   // path to extra stylesheet
   injectCss: '/css/extra.css',
