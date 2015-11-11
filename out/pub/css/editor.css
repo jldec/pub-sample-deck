@@ -10,7 +10,7 @@
 
 * { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
 
-html { font-size:62.5%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; } /* ==> base font-size 10px */
+html { font-size:62.5%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -moz-text-size-adjust:100%; } /* ==> base font-size 10px */
 body { font-size:1.2em; line-height:1.5; } /* ==> default font-size 12px */
 h1, h2, h3, h4, p   { margin:0; padding:0; }
 
