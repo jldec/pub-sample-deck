@@ -11,7 +11,7 @@
 <title>Sample Deck #1</title>
 <link rel="stylesheet" href="./shower/ribbon/styles/screen.css">
 <link rel="stylesheet" href="./css/pub-theme-shower-ribbon.css">
-<link rel="stylesheet" href="./css/highlight-github-0.2.3.css">
+<link rel="stylesheet" href="./css/highlight-9.18.1-github.css">
 <link rel="stylesheet" href="./css/extra.css">
 </head>
 <body class="list">
@@ -53,7 +53,7 @@ fail experimental tests.</p>
 </div></section>
 
 <section id="fragment-3" class="slide shout"><div>
-<div data-render-html="/#fragment-3"><h2 id="just-a-title-no-text">Just a title - No text</h2>
+<div data-render-html="/#fragment-3"><h2 id="just-a-title---no-text">Just a title - No text</h2>
 </div>
 
 </div></section>
@@ -61,7 +61,7 @@ fail experimental tests.</p>
 <section id="fragment-4" class="slide"><div>
 <div data-render-html="/#fragment-4"><h2 id="lists">Lists</h2>
 <p>Text followed by a list.</p>
-<ol>
+<ol start="undefined">
 <li>with with with with with with with<ul>
 <li><strong>bold words words</strong></li>
 <li><em>italic words words</em></li>
@@ -69,8 +69,10 @@ fail experimental tests.</p>
 <li>words words</li>
 </ul>
 </li>
-<li>nice nice nice nice nice nice</li>
 </ol>
+<ul>
+<li>nice nice nice nice nice nice</li>
+</ul>
 </div>
 
 </div></section>
@@ -82,34 +84,32 @@ fail experimental tests.</p>
 <tr>
 <th>col1</th>
 <th>col2</th>
-<th style="text-align:right">col3 header</th>
+<th align="right">col3 header</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>abc</td>
 <td>def</td>
-<td style="text-align:right">right aligned</td>
+<td align="right">right aligned</td>
 </tr>
 <tr>
 <td>abc</td>
 <td>def</td>
-<td style="text-align:right">right aligned</td>
+<td align="right">right aligned</td>
 </tr>
 <tr>
 <td>abc</td>
 <td>def</td>
-<td style="text-align:right">right aligned</td>
+<td align="right">right aligned</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 </div>
 
 </div></section>
 
 <section id="fragment-6" class="slide"><div>
 <div data-render-html="/#fragment-6"><h2 id="code">Code</h2>
-<pre><code class="lang-js">$.getJSON(&#39;/pub/_opts.json&#39;, function(opts) {
+<pre><code class="language-js">$.getJSON(&#39;/pub/_opts.json&#39;, function(opts) {
   var generator = require(&#39;pub-generator&#39;)(opts)
   generator.load(function(err) {
     var $edit = $(&#39;textarea.editor&#39;)
@@ -119,8 +119,7 @@ fail experimental tests.</p>
         $edit.val())
     })
   })
-})
-</code></pre>
+})</code></pre>
 </div>
 
 </div></section>
@@ -151,11 +150,11 @@ fail experimental tests.</p>
 </div>
 
 <script>window.pubRef = {"href":"/","relPath":"."};</script>
-<script src="./js/jquery-1.11.3.min.js" ></script>
+<script src="./js/jquery-1.12.4.min.js" ></script>
 <script src="./shower/shower.min.js" ></script>
-<script src="./js/highlight-0.2.3.min.js" ></script>
-<script src="./js/pub-pkg-highlight-0.2.3.js" ></script>
-<script src="./server/pub-ux.js" ></script>
+<script src="./js/highlight-9.18.1.min.js" ></script>
+<script src="./js/pub-pkg-highlight.js" ></script>
+<script src="./pub/pub-ux.js" ></script>
 <!-- photoCredit -->
 <!-- copyright -->
 </body>

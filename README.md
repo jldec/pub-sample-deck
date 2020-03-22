@@ -2,7 +2,7 @@
 
 This repo provides a quick way to start writing your own presentations using the [pub-theme-shower-ribbon](https://github.com/jldec/pub-theme-shower-ribbon) presentation theme.
 
-See published samples at [http://jldec.github.io/pub-sample-deck](http://jldec.github.io/pub-sample-deck)
+See published samples at [https://jldec.github.io/pub-sample-deck](https://jldec.github.io/pub-sample-deck)
 
 ### installation
 
@@ -79,7 +79,7 @@ This is only necessary if you want to publish the HTML to a server.
 npm run generate
 ```
 
-To preview the generated static output:
+To preview the generated static output in the `docs` folder:
 
 ```sh
 npm run static
