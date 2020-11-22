@@ -3,7 +3,7 @@ var opts = module.exports = {
   pkgs: ['pub-theme-shower', 'pub-pkg-highlight', 'pub-pkg-seo'],
 
   // set appUrl to publish fully qualified URLs in sitemap.xml
-  appUrl: "https://jldec.github.io/pub-sample-deck/",
+  appUrl: "https://jldec.github.io/pub-sample-deck",
 
   sources: [
     {
