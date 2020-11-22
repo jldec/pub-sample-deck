@@ -20,14 +20,12 @@ body { margin:0; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetic
 
 /* nav button */
 #nav > ul { position:fixed; left:0px; top:0px; z-index:100; padding:0; margin:0; list-style:none; }
-#nav > ul > li { height:34px; text-align:center; line-height:0.9; padding:4px 12px; color:#444; font-size:1.4em; background-color:#999; cursor:pointer; }
-#nav > ul > li:hover { color:#fff; opacity:1; }
+#nav > ul > li { color:#fff; opacity:0.2; height:34px; text-align:center; line-height:0.9; padding:4px 12px; font-size:1.4em; background-color:#999; cursor:pointer; }
+#nav > ul > li:hover, #nav > ul > li:focus { color:#444; opacity:1; color:#fff; opacity:1; }
 #nav > ul > li > ul { position:absolute; top:-1000px; left:0px;  padding:0; margin:0; background-color:#ddd; text-align:left; z-index:200; list-style:none; }
-#nav > ul:hover > li > ul  { top:40px; }
+#nav > ul:hover > li > ul, #nav > ul:focus > li > ul { top:40px; }
 #nav a { display:block; line-height:1.6; padding:0 20px 0 8px; font-size:20px; text-decoration:none; background:none; white-space:nowrap; }
 #nav a:hover { color:#eee; background-color:#777; }
-.full #nav > ul > li { opacity:0.2; }
-.full #nav > ul > li:hover { opacity:1; }
 
 /* don't print the buttons */
 @media print {

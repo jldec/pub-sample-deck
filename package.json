@@ -1,11 +1,11 @@
 {
   "name": "pub-sample-deck",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "sample presentation with shower theme for pub-server",
   "main": "pub-config.js",
   "dependencies": {
     "pub-server": "^2.7.3",
-    "pub-theme-shower": "^2.0.1"
+    "pub-theme-shower": "^2.0.2"
   },
   "devDependencies": {},
   "repository": {
