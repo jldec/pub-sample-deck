@@ -22,7 +22,7 @@
   "_resolved": "https://registry.npmjs.org/@shower/material/-/material-2.3.0.tgz",
   "_shasum": "a4e35a01f6b91c3c74cce7342feb69f102b43c25",
   "_spec": "@shower/material@^2.3.0",
-  "_where": "/Users/jleschner/pub/sample-deck/node_modules/@shower/shower",
+  "_where": "/Users/jleschner/pub/theme-shower/node_modules/@shower/shower",
   "author": {
     "name": "Vadim Makeev",
     "url": "https://pepelsbey.net/"
