@@ -1,0 +1,70 @@
+{
+  "_from": "@shower/ribbon@^3.3.0",
+  "_id": "@shower/ribbon@3.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-6rgboiawdedH/Ys+yQxKv76V/oNGyW24S6WhpZSGi+T8ffoHuJmVDQt40lURdzN+Clhmmn5UJDnJp2fPAkynOA==",
+  "_location": "/@shower/ribbon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@shower/ribbon@^3.3.0",
+    "name": "@shower/ribbon",
+    "escapedName": "@shower%2fribbon",
+    "scope": "@shower",
+    "rawSpec": "^3.3.0",
+    "saveSpec": null,
+    "fetchSpec": "^3.3.0"
+  },
+  "_requiredBy": [
+    "/@shower/shower"
+  ],
+  "_resolved": "https://registry.npmjs.org/@shower/ribbon/-/ribbon-3.3.0.tgz",
+  "_shasum": "b18524039ed1907b8419175ac5e9b1124c08ef2b",
+  "_spec": "@shower/ribbon@^3.3.0",
+  "_where": "/Users/jleschner/pub/sample-deck/node_modules/@shower/shower",
+  "author": {
+    "name": "Vadim Makeev",
+    "url": "https://pepelsbey.net/"
+  },
+  "bugs": {
+    "url": "https://github.com/shower/shower/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Ribbon theme for Shower HTML presentation engine",
+  "devDependencies": {
+    "@shower/core": "^3.0.0",
+    "live-server": "^1.2.1",
+    "stylelint": "^13.3.2"
+  },
+  "files": [
+    "fonts/**",
+    "pictures/**",
+    "styles/**",
+    "index.html",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "homepage": "https://github.com/shower/ribbon",
+  "keywords": [
+    "shower",
+    "presentation",
+    "ribbon",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "@shower/ribbon",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shower/ribbon.git"
+  },
+  "scripts": {
+    "start": "live-server . --watch='fonts/*,pictures/*,styles/**,index.html'",
+    "test": "stylelint 'styles/**/*.css'"
+  },
+  "version": "3.3.0"
+}

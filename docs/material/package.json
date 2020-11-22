@@ -1,0 +1,70 @@
+{
+  "_from": "@shower/material@^2.3.0",
+  "_id": "@shower/material@2.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-RVo3jxXTsWm3gS6WwjTJ27VElwSXWsiEkJI49msEF6/Qfl76HVwcgnmMqGF7qq7npiD6/tbvHkvZBCmKiH01Jw==",
+  "_location": "/@shower/material",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@shower/material@^2.3.0",
+    "name": "@shower/material",
+    "escapedName": "@shower%2fmaterial",
+    "scope": "@shower",
+    "rawSpec": "^2.3.0",
+    "saveSpec": null,
+    "fetchSpec": "^2.3.0"
+  },
+  "_requiredBy": [
+    "/@shower/shower"
+  ],
+  "_resolved": "https://registry.npmjs.org/@shower/material/-/material-2.3.0.tgz",
+  "_shasum": "a4e35a01f6b91c3c74cce7342feb69f102b43c25",
+  "_spec": "@shower/material@^2.3.0",
+  "_where": "/Users/jleschner/pub/sample-deck/node_modules/@shower/shower",
+  "author": {
+    "name": "Vadim Makeev",
+    "url": "https://pepelsbey.net/"
+  },
+  "bugs": {
+    "url": "https://github.com/shower/material/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Material theme for Shower HTML presentation engine",
+  "devDependencies": {
+    "@shower/core": "^3.0.0",
+    "live-server": "^1.2.1",
+    "stylelint": "^13.3.2"
+  },
+  "files": [
+    "fonts/**",
+    "pictures/**",
+    "styles/**",
+    "index.html",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "homepage": "https://github.com/shower/material",
+  "keywords": [
+    "shower",
+    "presentation",
+    "material",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "@shower/material",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shower/material.git"
+  },
+  "scripts": {
+    "start": "live-server . --watch='fonts/*,pictures/*,styles/**,index.html'",
+    "test": "stylelint 'styles/**/*.css'"
+  },
+  "version": "2.3.0"
+}

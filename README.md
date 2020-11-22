@@ -1,6 +1,6 @@
 # pub-server sample deck
 
-This repo provides a quick way to start writing your own presentations using the [pub-theme-shower-ribbon](https://github.com/jldec/pub-theme-shower-ribbon) presentation theme.
+This repo provides a quick way to start writing your own presentations using the [pub-theme-shower](https://github.com/jldec/pub-theme-shower) presentation theme.
 
 See published samples at [https://jldec.github.io/pub-sample-deck](https://jldec.github.io/pub-sample-deck)
 
@@ -12,7 +12,7 @@ cd pub-sample-deck
 npm install
 ```
 
-This will install pub-server and pub-theme-shower-ribbon as dependencies. [package.json](package.json) also includes a few convenience scripts for running pub-server.
+This will install pub-server and pub-theme-shower as dependencies. [package.json](package.json) also includes a few convenience scripts for running pub-server.
 
 ### markdown, images
 
@@ -34,7 +34,7 @@ name: Sample Deck #2
 ---- #cover ----
 
 ## Different Title
-![](/images/ice.jpg)
+![](/images/ice.jpg ".cover height")
 Use the nav menu to switch between presentations
 
 

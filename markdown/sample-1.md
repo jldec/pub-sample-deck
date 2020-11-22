@@ -7,7 +7,7 @@ Byline
 ---- ----
 
 ## Title
-![](/images/ice.jpg)
+![](/images/ice.jpg ".cover height")
 Use the nav menu to switch between presentations
 
 
