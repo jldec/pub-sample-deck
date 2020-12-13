@@ -4,7 +4,7 @@
   "description": "sample presentation with shower theme for pub-server",
   "main": "pub-config.js",
   "dependencies": {
-    "pub-server": "^2.7.3",
+    "pub-server": "^2.7.4",
     "pub-theme-shower": "^2.0.2"
   },
   "devDependencies": {},
