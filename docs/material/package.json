@@ -1,43 +1,29 @@
 {
-  "_from": "@shower/material@^2.4.1",
-  "_id": "@shower/material@2.4.1",
-  "_inBundle": false,
-  "_integrity": "sha512-aoGLDLVFw9RAjE5LH9BG6IEIA5oet/3jvudUgr3VeloZ6tLI6PRGzmkKFoZC0wENgQrcUQYY060WtNZBUXm+Lg==",
-  "_location": "/@shower/material",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "@shower/material@^2.4.1",
-    "name": "@shower/material",
-    "escapedName": "@shower%2fmaterial",
-    "scope": "@shower",
-    "rawSpec": "^2.4.1",
-    "saveSpec": null,
-    "fetchSpec": "^2.4.1"
+  "name": "@shower/material",
+  "description": "Material theme for Shower HTML presentation engine",
+  "version": "2.5.0",
+  "publishConfig": {
+    "access": "public"
   },
-  "_requiredBy": [
-    "/@shower/shower"
-  ],
-  "_resolved": "https://registry.npmjs.org/@shower/material/-/material-2.4.1.tgz",
-  "_shasum": "202f8453afe28f2e6d847de36e1bc996265f2d5b",
-  "_spec": "@shower/material@^2.4.1",
-  "_where": "/Users/jleschner/pub/sample-deck/node_modules/@shower/shower",
   "author": {
     "name": "Vadim Makeev",
     "url": "https://pepelsbey.net/"
   },
+  "homepage": "https://github.com/shower/material",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shower/material.git"
+  },
   "bugs": {
     "url": "https://github.com/shower/material/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Material theme for Shower HTML presentation engine",
-  "devDependencies": {
-    "@shower/core": "^3.1.0",
-    "live-server": "^1.2.1",
-    "stylelint": "^13.11.0"
-  },
+  "license": "MIT",
+  "keywords": [
+    "shower",
+    "presentation",
+    "material",
+    "theme"
+  ],
   "files": [
     "fonts/**",
     "pictures/**",
@@ -46,25 +32,13 @@
     "LICENSE.md",
     "README.md"
   ],
-  "homepage": "https://github.com/shower/material",
-  "keywords": [
-    "shower",
-    "presentation",
-    "material",
-    "theme"
-  ],
-  "license": "MIT",
-  "name": "@shower/material",
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/shower/material.git"
+  "devDependencies": {
+    "@shower/core": "^3.2.0",
+    "browser-sync": "^2.27.5",
+    "stylelint": "^13.13.1"
   },
   "scripts": {
-    "start": "live-server . --watch='fonts/*,pictures/*,styles/**,index.html'",
-    "test": "stylelint 'styles/**/*.css'"
-  },
-  "version": "2.4.1"
+    "test": "stylelint 'styles/**/*.css'",
+    "start": "browser-sync start --server --no-notify --no-ui --no-ghost-mode --files 'fonts/*,pictures/*,styles/**,index.html'"
+  }
 }

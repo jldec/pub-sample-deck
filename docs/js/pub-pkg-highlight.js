@@ -4,18 +4,14 @@
  * browserify entry point - mainly to initialize highlight.js
  * also supports pub-generator 'update-view' events
  *
- * copyright 2015-2020, Jürgen Leschner - github.com/jldec - MIT license
+ * Copyright (c) 2015-2022 Jürgen Leschner - github.com/jldec - MIT license
  *
  * for highlight.js please see included static/js/LICENSE-HIGHLIGHT
  * or visit https://github.com/highlightjs/highlight.js
  */
 
-hljs.initHighlightingOnLoad();
+hljs.highlightAll();
 
 window.onGenerator = function(generator) {
-  generator.on('update-view', function(path, query, hash, window, $html) {
-    $('pre code', $html).each(function(i, block) {
-      hljs.highlightBlock(block);
-    });
-  });
+  generator.on('update-view', hljs.highlightAll);
 };

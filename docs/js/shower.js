@@ -1,6 +1,6 @@
 /**
  * Core for Shower HTML presentation engine
- * @shower/core v3.0.0, https://github.com/shower/core
+ * @shower/core v3.2.0, https://github.com/shower/core
  * @copyright 2010–2021 Vadim Makeev, https://pepelsbey.net
  * @license MIT
  */
@@ -36,6 +36,8 @@
         stepSelector: '.next',
         fullModeClass: 'full',
         listModeClass: 'list',
+        mouseHiddenClass: 'pointless',
+        mouseInactivityTimeout: 5000,
 
         slideSelector: '.slide',
         slideTitleSelector: 'h2',
@@ -561,6 +563,83 @@
         window.addEventListener('resize', updateScale);
     };
 
+    var touch = (shower) => {
+        let exitFullScreen = false;
+        let clickable = false;
+
+        document.addEventListener('touchstart', (event) => {
+            if (event.touches.length === 1) {
+                const touch = event.touches[0];
+                const x = touch.clientX;
+                const { target } = touch;
+                clickable = target.tabIndex !== -1;
+                if (!clickable) {
+                    if (shower.isFullMode) {
+                        if (event.cancelable) event.preventDefault();
+                        if (window.innerWidth / 2 < x) {
+                            shower.next();
+                        } else {
+                            shower.prev();
+                        }
+                    }
+                }
+            } else if (event.touches.length === 3) {
+                exitFullScreen = true;
+            }
+        });
+
+        shower.container.addEventListener('touchend', (event) => {
+            if (exitFullScreen) {
+                event.preventDefault();
+                exitFullScreen = false;
+                shower.exitFullMode();
+            } else if (event.touches.length === 1 && !clickable && shower.isFullMode)
+                event.preventDefault();
+        });
+    };
+
+    var mouse = (shower) => {
+        const { mouseHiddenClass, mouseInactivityTimeout } = shower.options;
+
+        let hideMouseTimeoutId = null;
+
+        const cleanUp = () => {
+            shower.container.classList.remove(mouseHiddenClass);
+            clearTimeout(hideMouseTimeoutId);
+            hideMouseTimeoutId = null;
+        };
+
+        const hideMouseIfInactive = () => {
+            if (hideMouseTimeoutId !== null) {
+                cleanUp();
+            }
+
+            hideMouseTimeoutId = setTimeout(() => {
+                shower.container.classList.add(mouseHiddenClass);
+            }, mouseInactivityTimeout);
+        };
+
+        const initHideMouseIfInactiveModule = () => {
+            shower.container.addEventListener('mousemove', hideMouseIfInactive);
+        };
+
+        const destroyHideMouseIfInactiveModule = () => {
+            shower.container.removeEventListener('mousemove', hideMouseIfInactive);
+            cleanUp();
+        };
+
+        const handleModeChange = () => {
+            if (shower.isFullMode) {
+                initHideMouseIfInactiveModule();
+            } else {
+                destroyHideMouseIfInactiveModule();
+            }
+        };
+
+        shower.addEventListener('start', handleModeChange);
+        shower.addEventListener('modechange', handleModeChange);
+    };
+
     var installModules = (shower) => {
         a11y(shower);
         progress(shower);
@@ -570,6 +649,8 @@
         title(shower);
         location$1(shower); // should come after `title`
         view(shower);
+        touch(shower);
+        mouse(shower);
 
         // maintains invariant: active slide always exists in `full` mode
         if (shower.isFullMode && !shower.activeSlide) {
@@ -752,4 +833,4 @@
         shower.start();
     });
 
-}());
+})();
